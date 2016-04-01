@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shn</title>
+</head>
+
+<body>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	#one{
+		margin: 0 auto;
+		text-align: center;
+		line-height: 25em;
+	}
+</style>
+<div id="one">
+	网站建设中...
+</div>
+	
+</body>
+</html>

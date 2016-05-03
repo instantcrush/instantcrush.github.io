@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rotate</title>
+</head>
+
+<style type="text/css">
+	
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
+
+
+body {
+  font-family: Lato, sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;  
+  background: #ff75b0;
+  background: linear-gradient(135deg, #ff75b0 0%, #00ffbd 80%, #D3FF73 100%) fixed;
+  background-size: 150% 150%;
+	animation: bg 8s infinite linear alternate;
+}
+
+@keyframes bg {
+	from { background-position: 0 0; }
+	to {  background-position: 50% 50%; }
+}
+
+h1 {
+  font-size: 120px;
+  text-align: center;
+  margin: 30px 0 0 -152px;
+  color: rgba(255,255,255,.3);
+  color: #00ffbd;
+  position: absolute;
+  text-shadow: 0 1px 3px rgba(255,117,176,.5);
+  opacity: .7;
+}
+
+h1 span:nth-child(1) {
+  font-size: 90px;
+  display: block;
+  letter-spacing: 1px;
+}
+h1 span:nth-child(2) {
+  font-size: 100px;
+  display: block;
+  white-space: nowrap;
+}
+h1 span:nth-child(3) {
+  letter-spacing: -1px;
+}
+
+.wrap {
+	perspective: 800px;
+	perspective-origin: 50% 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -100px;
+}
+
+@keyframes spin {
+	from { transform: rotateY(360deg); }
+	to { transform: rotateY(0); }
+}
+
+.triangle {
+  width: 200px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+	animation: spin 4s infinite linear;
+  opacity: .5;
+
+
+  line-height: 50px;
+  text-align: center;
+
+
+}
+
+.triangle div {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 0 100px 200px;
+  transform-origin: bottom center;
+}
+
+
+@keyframes lighter {
+	from { border-color: transparent transparent #FF75B0 ; }
+	to { border-color: transparent transparent #E5699E ; }
+}
+
+@keyframes darker {
+	from { border-color: transparent transparent #fa6ca9 ; }
+	to { border-color: transparent transparent #e06299 ; }
+}
+
+.front, .right, .back, .left {
+	animation: lighter 2s infinite linear alternate;
+}
+
+.front {
+  border-color: transparent transparent #FF75B0 ;
+  transform: translateZ(150px) rotateX(30deg);
+  animation-delay: -.5s;
+}
+.right {
+  transform: translateX(150px) rotateZ(-30deg) rotateY(90deg);
+  border-color: transparent transparent #FF75B0;
+  animation-delay: -3.5s;
+}
+.back {
+  transform: translateZ(-150px) rotateX(-30deg) rotateY(180deg);
+  border-color: transparent transparent #FF75B0;
+  animation-delay: -2.5s;
+}
+.left {
+  transform: translateX(-150px) rotateZ(30deg) rotateY(-90deg);
+  border-color: transparent transparent #FF75B0;
+  animation-delay: -1.5s;
+}
+
+.bfront, .bright, .bback, .bleft {
+	animation: darker 2s infinite linear alternate;
+}
+
+.bfront {
+  transform: translateZ(150px) rotateX(-210deg);
+  border-color: transparent transparent #E5699E;
+  animation-delay: -.5s;
+}
+.bright {
+  transform: translateX(150px) rotateZ(210deg) rotateY(-90deg);
+  border-color: transparent transparent #E5699E;
+  animation-delay: -3.5s;
+}
+.bback {
+  transform: translateZ(-150px) rotateX(210deg) rotateY(180deg);
+  border-color: transparent transparent #E5699E;
+  animation-delay: -2.5s;
+}
+.bleft {
+  transform: translateX(-150px) rotateZ(150deg) rotateY(90deg);
+  border-color: transparent transparent #E5699E;
+  animation-delay: -1.5s;
+}
+
+</style>
+
+<body>
+	<div class="wrap">
+  
+  <h1>
+    <span>coming soon</span>
+    <span>shn's web</span>
+    <span></span>
+  </h1>
+ 
+  <div class="triangle">
+    <div class="front"></div>
+    <div class="right"></div>
+    <div class="back"></div>
+    <div class="left"></div>
+    <div class="bfront"></div>
+    <div class="bright"></div>
+    <div class="bback"></div>
+    <div class="bleft"></div>
+  </div>
+ 
+  
+</div>
+</body>
+</html>

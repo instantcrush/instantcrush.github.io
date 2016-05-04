@@ -46,6 +46,7 @@ body{
 	position: absolute;
 	top: 95%;
 	color:#c0c0c0;
+	text-shadow: 1px 1px 1px #666;
 }
 @keyframes rou {
 	from { transform: rotate(360deg); }

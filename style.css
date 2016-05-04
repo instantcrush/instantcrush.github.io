@@ -32,6 +32,9 @@ body{
 	font-weight: bold;
 	text-align: center;
 	animation: rou 20s infinite linear,jiao 15s infinite linear alternate,op 2s infinite alternate;
+	-webkit-animation: rou 20s infinite linear,jiao 15s infinite linear alternate,op 2s infinite alternate;
+	-moz-animation: rou 20s infinite linear,jiao 15s infinite linear alternate,op 2s infinite alternate;
+	-o-animation: rou 20s infinite linear,jiao 15s infinite linear alternate,op 2s infinite alternate;
 }
 #footer{
 	width: 100%;

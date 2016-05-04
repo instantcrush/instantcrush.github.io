@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body{
-	background: -webkit-linear-gradient(left top, #38b48b , #ff75b0); /* Safari 5.1 - 6.0 */
+    background: -webkit-linear-gradient(left top, #38b48b , #ff75b0); /* Safari 5.1 - 6.0 */
     background: -moz-linear-gradient(bottom right, #38b48b, #ff75b0); /* Opera 11.1 - 12.0 */
     background: -o-linear-gradient(bottom right, #38b48b, #ff75b0);   /* Firefox 3.6 - 15 */
     background: linear-gradient(to bottom right, #38b48b , #ff75b0);  /* 标准的语法（必须放在最后）*/
@@ -48,11 +48,35 @@ body{
 	from { transform: rotate(360deg); }
 	to { transform: rotate(0); }
 }
+@-webkit-keyframes rou {
+	from { transform: rotate(360deg); }
+	to { transform: rotate(0); }
+}
+@-moz-keyframes rou {
+	from { transform: rotate(360deg); }
+	to { transform: rotate(0); }
+}
+@-o-keyframes rou {
+	from { transform: rotate(360deg); }
+	to { transform: rotate(0); }
+}
 /*@keyframes jiao {
 	from{ border-radius: 50%; }
 	to{border-radius: 0;}
 }*/
 @keyframes op {
+	from{ opacity: 1; }
+	to{ opacity: 0;}
+}
+@-webkit-keyframes op {
+	from{ opacity: 1; }
+	to{ opacity: 0;}
+}
+@-moz-keyframes op {
+	from{ opacity: 1; }
+	to{ opacity: 0;}
+}
+@-o-keyframes op {
 	from{ opacity: 1; }
 	to{ opacity: 0;}
 }

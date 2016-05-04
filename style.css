@@ -42,6 +42,7 @@ body{
 	font-weight: bold;
 	position: absolute;
 	top: 95%;
+	color:#c0c0c0;
 }
 @keyframes rou {
 	from { transform: rotate(360deg); }

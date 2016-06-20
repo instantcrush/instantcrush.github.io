@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{height: 100%;}
+body{
+	background: -webkit-linear-gradient(left top, #38b48b , #ff75b0); /* Safari 5.1 - 6.0 */
+    background: -moz-linear-gradient(bottom right, #38b48b, #ff75b0); /* Opera 11.1 - 12.0 */
+    background: -o-linear-gradient(bottom right, #38b48b, #ff75b0);   /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom right, #38b48b , #ff75b0);  /* 标准的语法（必须放在最后）*/
+    position: relative;
+    height: 100%;
+}
+
+.box{
+	position: absolute;
+	top: 20px;
+	left: 0;right: 0;
+	margin: auto 0;
+}
+.box h1{
+	width: 8em;height: 8em;line-height: 8em;
+	border-radius: 50%;
+	color: #fff;
+	margin: 0 auto;
+	background-color: black;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+	animation: rou 20s infinite linear,jiao 15s infinite linear alternate,op 2s infinite alternate;
+
+}
+#footer{
+	width: 100%;
+	font-size: 1em;
+	letter-spacing: 4px;
+	font-variant: small-caps;
+	text-align: center;
+	font-weight: bold;
+	position: fixed;
+	bottom: 1em;
+	color: #e1e1e1;
+}
+@keyframes rou {
+	from { transform: rotate(360deg); }
+	to { transform: rotate(0); }
+}
+/*@keyframes jiao {
+	from{ border-radius: 50%; }
+	to{border-radius: 0;}
+}*/
+/*@keyframes op {
+	from{ opacity: 1; }
+	to{ opacity: 0;}
+}*/
